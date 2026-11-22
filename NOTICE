@@ -1,0 +1,8 @@
+Victory UI
+
+The 44 base components under components/base, components/application and
+components/foundations are adapted from BoardUI (https://github.com/BoardUI/boardui),
+Copyright (c) 2026 Mertcan Dundar Esmergul, licensed under the MIT License.
+
+The 500-component extended library in components/extended, and all other
+Victory UI code, is original to this project.

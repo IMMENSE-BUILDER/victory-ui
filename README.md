@@ -13,10 +13,17 @@ Victory UI is a React design system for agentic interfaces: the parts an AI prod
 
 ## What's in this repository
 
-- All 69 free items as source: base components, application blocks, tokens and type scale. The catalogue is below.
+- The 44 base items as source: base components, application blocks, tokens and type scale. The catalogue is below.
 - The extended library: 500 project-owned components in 49 families at `/library`, built on the same tokens and type scale and kept in `components/extended`. Open a family to use the real component.
 - The app: a chat at `/`, a dashboard with the two free charts, and sign-in and sign-up screens, all built from the components in this repository. Chat history stays in the visitor's browser. No database.
 - `app/api/chat/route.ts`, which reads your key server-side and streams replies. The key never reaches the browser.
+
+## Upstream credit
+
+The **44 base items** in `/catalog` — `components/base`, `components/application` and
+`components/foundations` — are adapted from [BoardUI](https://github.com/BoardUI/boardui),
+Copyright (c) 2026 Mertcan Dundar Esmergul, under the MIT License. The 500-component
+extended library in `/library`, and everything else in Victory UI, is original to this project.
 
 ## Bring your own key
 
