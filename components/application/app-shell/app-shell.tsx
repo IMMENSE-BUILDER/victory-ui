@@ -43,11 +43,7 @@ export const STARTER_SITE_PREFIX = "/templates/chat-starter";
 // Re-exported so the catalogue ships with the shell; the starter's pages are
 // copied into the public repo by path and can only import what a registry
 // item carries.
-export {
-  CatalogTierFilter,
-  ComponentsCatalog,
-  type CatalogTier,
-} from "@/components/application/app-shell/components-catalog";
+export { ComponentsCatalog } from "@/components/application/app-shell/components-catalog";
 
 /** "" in a deployed starter. */
 export function useStarterBase(): string {

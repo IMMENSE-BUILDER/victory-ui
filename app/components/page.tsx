@@ -1,27 +1,23 @@
 "use client";
 
-import { useState } from "react";
 import Link from "next/link";
 import { RiApps2Line, RiArrowRightLine, RiLayoutGridLine } from "@remixicon/react";
 
 import {
   AppShell,
-  CatalogTierFilter,
   ComponentsCatalog,
   useStarterBase,
-  type CatalogTier,
 } from "@/components/application/app-shell/app-shell";
 import { EXTENDED_COUNT, EXTENDED_SECTIONS } from "@/components/extended";
 
 /** The starter's catalogue page: every component and block, linking out. */
 export default function ComponentsPage() {
-  const [tier, setTier] = useState<CatalogTier>("all");
   const base = useStarterBase();
   return (
     <AppShell
       title="Components and Blocks"
       icon={RiLayoutGridLine}
-      actions={<CatalogTierFilter tier={tier} onChange={setTier} />}
+      actions={null}
       columnClassName="max-w-[964px]"
     >
       <Link
@@ -43,7 +39,7 @@ export default function ComponentsPage() {
           className="size-4 shrink-0 text-foreground-icon-secondary transition-transform duration-150 ease group-hover:translate-x-0.5 rtl:-scale-x-100"
         />
       </Link>
-      <ComponentsCatalog tier={tier} />
+      <ComponentsCatalog />
     </AppShell>
   );
 }

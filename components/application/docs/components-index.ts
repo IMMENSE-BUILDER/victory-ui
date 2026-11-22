@@ -1,7 +1,7 @@
 import { RiFontSize, RiPaletteLine } from "@remixicon/react";
 
 /**
- * The catalogue behind victoryui.dev/components: every component, block, chart
+ * The component catalogue: every item that ships in this repository.
  * and template with its docs page. Plain data, so the starter can show the same
  * list (linking out to the site) without carrying any component source.
  */
